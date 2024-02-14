@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image on Heart</title>
+</head>
+<body style="margin: 0; overflow: hidden;">
+<canvas id="myCanvas" width="600" height="600"></canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var img = new Image();
+img.src = "path_to_your_image.jpg"; // Replace "path_to_your_image.jpg" with the path to your image
+img.onload = function() {
+    ctx.drawImage(img, 200, 200); // Adjust the coordinates as needed to position the image
+}
+</script>
+</body>
+</html>
